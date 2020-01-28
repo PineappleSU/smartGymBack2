@@ -1,0 +1,641 @@
+2019-12-10 14:55:57  [ localhost-startStop-1:75 ] - [ INFO ]  FrameworkServlet 'smartGym-backEnd-web': initialization started
+2019-12-10 14:55:57  [ localhost-startStop-1:97 ] - [ INFO ]  Refreshing WebApplicationContext for namespace 'smartGym-backEnd-web-servlet': startup date [Tue Dec 10 14:55:57 CST 2019]; root of context hierarchy
+2019-12-10 14:55:57  [ localhost-startStop-1:135 ] - [ INFO ]  Loading XML bean definitions from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\spring\applicationContext-dao.xml]
+2019-12-10 14:55:57  [ localhost-startStop-1:287 ] - [ INFO ]  Loading XML bean definitions from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\spring\applicationContext-redis.xml]
+2019-12-10 14:55:57  [ localhost-startStop-1:307 ] - [ INFO ]  Loading XML bean definitions from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\spring\applicationContext-trans.xml]
+2019-12-10 14:55:58  [ localhost-startStop-1:355 ] - [ INFO ]  Loading XML bean definitions from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\spring\applicationContext-web.xml]
+2019-12-10 14:55:58  [ localhost-startStop-1:791 ] - [ INFO ]  Loading properties file from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\conf\db.properties]
+2019-12-10 14:55:58  [ localhost-startStop-1:791 ] - [ INFO ]  Loading properties file from file [F:\SmartGym\smartGymBackEnd\smartGymBackEnd\smartGym-backEnd\smartGym-backEnd-web\target\classes\conf\resource.properties]
+2019-12-10 14:55:58  [ localhost-startStop-1:803 ] - [ INFO ]  JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-12-10 14:56:00  [ localhost-startStop-1:2859 ] - [ INFO ]  Mapped "{[/smartgym/application/getApplicationListByStudentNo],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ApplicationController.getApplicationListByStudentNo(java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2860 ] - [ INFO ]  Mapped "{[/smartgym/application/deleteApplication],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ApplicationController.deleteApplication(cn.smartGym.pojoCtr.ApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2861 ] - [ INFO ]  Mapped "{[/smartgym/application/addApplication],methods=[POST || GET],consumes=[application/x-www-form-urlencoded]}" onto public common.utils.SGResult cn.smartGym.controller.ApplicationController.addApplication(cn.smartGym.pojoCtr.ApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2863 ] - [ INFO ]  Mapped "{[/smartgym/appUser/register],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.register(cn.smartGym.pojoCtr.AppUserCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2863 ] - [ INFO ]  Mapped "{[/smartgym/appUser/getAppUserListByDetails],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.getAppUserListByDetails(java.lang.String,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2864 ] - [ INFO ]  Mapped "{[/smartgym/appUser/updateUserAuthority],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.updateUserAuthority(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2864 ] - [ INFO ]  Mapped "{[/smartgym/appUser/getAppUserList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.getAppUserList(cn.smartGym.pojoCtr.AppUserCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2866 ] - [ INFO ]  Mapped "{[/smartgym/appUser/update],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.updateUser(cn.smartGym.pojoCtr.AppUserCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2867 ] - [ INFO ]  Mapped "{[/smartgym/appUser/getCollegeList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.AppUserController.getCollegeList() throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2869 ] - [ INFO ]  Mapped "{[/smartgym/category/addCategory],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CategoryController.addCompetition(cn.smartGym.pojoCtr.CategoryCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2870 ] - [ INFO ]  Mapped "{[/smartgym/category/deleteCategory],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CategoryController.deleteCategory(java.lang.String,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2871 ] - [ INFO ]  Mapped "{[/smartgym/category/updateCategory],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CategoryController.updateCategory(cn.smartGym.pojoCtr.CategoryCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2871 ] - [ INFO ]  Mapped "{[/smartgym/category/getCategoryList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CategoryController.getCategoryList(cn.smartGym.pojoCtr.CategoryCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2875 ] - [ INFO ]  Mapped "{[/smartgym/competition/updateCompetition],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.updateCompetition(cn.smartGym.pojoCtr.CompetitionCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2875 ] - [ INFO ]  Mapped "{[/smartgym/competition/deleteCompetition],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.deleteCompetition(java.lang.String,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2876 ] - [ INFO ]  Mapped "{[/smartgym/competition/verifyCompetition],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.verifyCompetition(java.lang.String,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2877 ] - [ INFO ]  Mapped "{[/smartgym/competition/getCompetitionList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.getCompetitionList(cn.smartGym.pojoCtr.CompetitionCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2877 ] - [ INFO ]  Mapped "{[/smartgym/competition/getCompetitionById],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.getCompetitionById(cn.smartGym.pojoCtr.CompetitionCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2877 ] - [ INFO ]  Mapped "{[/smartgym/competition/addCompetition],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.CompetitionController.addCompetition(cn.smartGym.pojoCtr.CompetitionCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2880 ] - [ INFO ]  Mapped "{[/smartgym/event/addEvent],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.EventController.addEvent(cn.smartGym.pojoCtr.EventCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2881 ] - [ INFO ]  Mapped "{[/smartgym/event/updateEvent],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.EventController.updateCompetition(cn.smartGym.pojoCtr.EventCtr,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2881 ] - [ INFO ]  Mapped "{[/smartgym/event/deleteEvent],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.EventController.deleteCompetition(java.lang.String,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2882 ] - [ INFO ]  Mapped "{[/smartgym/event/getEventList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.EventController.getEventList(cn.smartGym.pojoCtr.EventCtr,java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2882 ] - [ INFO ]  Mapped "{[/smartgym/event/getEventById],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.EventController.getEventById(cn.smartGym.pojoCtr.EventCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2883 ] - [ INFO ]  Mapped "{[/smartgym/gameApplication/getApplicationByCategoryId],methods=[POST || GET],consumes=[application/x-www-form-urlencoded]}" onto public common.utils.SGResult cn.smartGym.controller.GameApplicationController.getApplicationByCategoryId(cn.smartGym.pojoCtr.GameApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2884 ] - [ INFO ]  Mapped "{[/smartgym/gameApplication/getApplicationByItemId],methods=[POST || GET],consumes=[application/x-www-form-urlencoded]}" onto public common.utils.SGResult cn.smartGym.controller.GameApplicationController.getApplicationByItemId(cn.smartGym.pojoCtr.GameApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2884 ] - [ INFO ]  Mapped "{[/smartgym/gameApplication/verifyApplication],methods=[POST || GET],consumes=[application/x-www-form-urlencoded]}" onto public common.utils.SGResult cn.smartGym.controller.GameApplicationController.verifyApplication(cn.smartGym.pojoCtr.GameApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2885 ] - [ INFO ]  Mapped "{[/smartgym/gameApplication/addApplication],methods=[POST || GET],consumes=[application/x-www-form-urlencoded]}" onto public common.utils.SGResult cn.smartGym.controller.GameApplicationController.addApplication(cn.smartGym.pojoCtr.GameApplicationCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2886 ] - [ INFO ]  Mapped "{[/inform/addInform],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.InformController.addInform(cn.smartGym.pojo.Information)
+2019-12-10 14:56:00  [ localhost-startStop-1:2887 ] - [ INFO ]  Mapped "{[/inform/updateInform],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.InformController.updateInform(cn.smartGym.pojo.Information)
+2019-12-10 14:56:00  [ localhost-startStop-1:2887 ] - [ INFO ]  Mapped "{[/inform/deleteInformById],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.InformController.deleteInformById(java.lang.Long) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2888 ] - [ INFO ]  Mapped "{[/inform/getInformList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.InformController.getInformList(java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2888 ] - [ INFO ]  Mapped "{[/inform/getInformById],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.InformController.getInformById(java.lang.Long)
+2019-12-10 14:56:00  [ localhost-startStop-1:2890 ] - [ INFO ]  Mapped "{[/smartgym/item/getItemInfo],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ItemController.getItemInfo(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2891 ] - [ INFO ]  Mapped "{[/smartgym/item/getInfo],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ItemController.getInfoPage(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2891 ] - [ INFO ]  Mapped "{[/smartgym/item/getInfo1],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ItemController.getInfoPage1(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2892 ] - [ INFO ]  Mapped "{[/smartgym/item/getInfo2],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ItemController.getInfoPage2(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2892 ] - [ INFO ]  Mapped "{[/smartgym/item/getInfo3],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ItemController.getInfoPage3(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2897 ] - [ INFO ]  Mapped "{[/smartgym/manager/addItem],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.addItem(cn.smartGym.pojoCtr.ItemCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2898 ] - [ INFO ]  Mapped "{[/smartgym/manager/getPlayersListByItemDetailsAndCollege],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getPlayersListByItemDetailsAndCollege(cn.smartGym.pojoCtr.ItemCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2898 ] - [ INFO ]  Mapped "{[/smartgym/manager/generateApplicationsExcelByCollege],methods=[POST || GET]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.generateApplicationsExcelByCollege(java.lang.String,java.lang.String)
+2019-12-10 14:56:00  [ localhost-startStop-1:2899 ] - [ INFO ]  Mapped "{[/smartgym/manager/getInfoGroupByItem],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getInfoGroupByItem(cn.smartGym.pojoCtr.ItemCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2900 ] - [ INFO ]  Mapped "{[/smartgym/manager/getInfoGroupByItemDetail],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getInfoGroupByItemDetail(java.lang.Long) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2900 ] - [ INFO ]  Mapped "{[/smartgym/manager/getInfoGroupByCollege],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getInfoGroupByCollege(cn.smartGym.pojoCtr.ItemCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2901 ] - [ INFO ]  Mapped "{[/smartgym/manager/getInfoGroupByCollegeDetail],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getInfoGroupByCollegeDetail(cn.smartGym.pojoCtr.ItemCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2901 ] - [ INFO ]  Mapped "{[/smartgym/manager/viewByCollegeManager],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.viewByCollegeManager(cn.smartGym.pojoCtr.EventCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2902 ] - [ INFO ]  Mapped "{[/smartgym/manager/reviewByCollegeManager],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.reviewByCollegeManager(java.lang.Long[]) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2902 ] - [ INFO ]  Mapped "{[/smartgym/manager/viewByUniversityManager],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.viewByUniversityManager(cn.smartGym.pojoCtr.EventCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2903 ] - [ INFO ]  Mapped "{[/smartgym/manager/reviewByUniversityManager],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.reviewByUniversityManager(cn.smartGym.pojoCtr.ItemCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2903 ] - [ INFO ]  Mapped "{[/smartgym/manager/generatePlayersDetailedExcel],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.generatePlayersDetailedExcel(cn.smartGym.pojoCtr.ItemCtr) throws java.io.IOException
+2019-12-10 14:56:00  [ localhost-startStop-1:2904 ] - [ INFO ]  Mapped "{[/smartgym/manager/getPlayersExcelFilePath],methods=[POST || GET]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getPlayersExcelFilePath(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2904 ] - [ INFO ]  Mapped "{[/smartgym/manager/maintenance],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.maintenance() throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2904 ] - [ INFO ]  Mapped "{[/smartgym/manager/hardDelete],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.hardDelete() throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2905 ] - [ INFO ]  Mapped "{[/smartgym/manager/getUser],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getUser(cn.smartGym.pojoCtr.SgUserCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2905 ] - [ INFO ]  Mapped "{[/smartgym/manager/setUserAuthority],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.setUserAuthority(java.lang.Integer,java.lang.String[]) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2905 ] - [ INFO ]  Mapped "{[/smartgym/manager/deleteItem],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.deleteItem(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2906 ] - [ INFO ]  Mapped "{[/smartgym/manager/registerGrades],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.registerGrades(cn.smartGym.pojoCtr.PlayerCtr,java.lang.Integer,java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2906 ] - [ INFO ]  Mapped "{[/smartgym/manager/genRank],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.genRank(java.lang.Long,java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2906 ] - [ INFO ]  Mapped "{[/smartgym/manager/getTopK],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.ManagerController.getTopK(java.lang.Long,java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2906 ] - [ INFO ]  Mapped "{[/smartgym/manager/downLoadExcel],methods=[POST || GET]}" onto public void cn.smartGym.controller.ManagerController.downLoadExcel(cn.smartGym.pojoCtr.fileDownloadCtr,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2907 ] - [ INFO ]  Mapped "{[/smartgym/medal/getMedal],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.MedalController.getMedal(cn.smartGym.pojoCtr.MedalCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2908 ] - [ INFO ]  Mapped "{[/smartgym/news/getNewsList],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.NewsController.getNewsByType(int)
+2019-12-10 14:56:00  [ localhost-startStop-1:2909 ] - [ INFO ]  Mapped "{[/smartgym/news/getNewsById],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.NewsController.getNewsById(java.lang.Long)
+2019-12-10 14:56:00  [ localhost-startStop-1:2909 ] - [ INFO ]  Mapped "{[/smartgym/news/addNews],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.NewsController.addNews(cn.smartGym.pojo.News)
+2019-12-10 14:56:00  [ localhost-startStop-1:2910 ] - [ INFO ]  Mapped "{[/smartgym/news/editNews],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.NewsController.editNews(int,cn.smartGym.pojo.News)
+2019-12-10 14:56:00  [ localhost-startStop-1:2910 ] - [ INFO ]  Mapped "{[/smartgym/pirture/getPictureUrl],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.PictureController.getPictureUrl(java.lang.Integer)
+2019-12-10 14:56:00  [ localhost-startStop-1:2911 ] - [ INFO ]  Mapped "{[/smartgym/player/getPlayerListByStudentNo],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.PlayerController.getPlayerListByStudentNo(java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2911 ] - [ INFO ]  Mapped "{[/smartgym/player/getPlayerListByItem],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.PlayerController.getPlayerListByItem(cn.smartGym.pojoCtr.ItemCtr)
+2019-12-10 14:56:00  [ localhost-startStop-1:2912 ] - [ INFO ]  Mapped "{[/smartgym/remark/addRemark],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto common.utils.SGResult cn.smartGym.controller.RemarkController.addRemark(cn.smartGym.pojo.Remark)
+2019-12-10 14:56:00  [ localhost-startStop-1:2914 ] - [ INFO ]  Mapped "{[/smartgym/user/register],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.UserController.register(cn.smartGym.pojoCtr.SgUserCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2914 ] - [ INFO ]  Mapped "{[/smartgym/user/getAllCollegesAndCampus],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.UserController.getAllCollegesAndCampus() throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2914 ] - [ INFO ]  Mapped "{[/smartgym/user/update],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.UserController.updateUser(cn.smartGym.pojoCtr.SgUserCtr) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2915 ] - [ INFO ]  Mapped "{[/smartgym/user/signIn],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.UserController.signIn(cn.smartGym.pojoCtr.SgUserCtr,java.lang.String) throws java.lang.Exception
+2019-12-10 14:56:00  [ localhost-startStop-1:2915 ] - [ INFO ]  Mapped "{[/smartgym/user/delete],methods=[POST || GET],consumes=[application/x-www-form-urlencoded;charset=utf-8]}" onto public common.utils.SGResult cn.smartGym.controller.UserController.deleteUser(cn.smartGym.pojoCtr.SgUserCtr) throws java.lang.Exception
+2019-12-10 14:56:01  [ localhost-startStop-1:3690 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace 'smartGym-backEnd-web-servlet': startup date [Tue Dec 10 14:55:57 CST 2019]; root of context hierarchy
+2019-12-10 14:56:01  [ localhost-startStop-1:3775 ] - [ INFO ]  Looking for @ControllerAdvice: WebApplicationContext for namespace 'smartGym-backEnd-web-servlet': startup date [Tue Dec 10 14:55:57 CST 2019]; root of context hierarchy
+2019-12-10 14:56:01  [ localhost-startStop-1:3964 ] - [ INFO ]  FrameworkServlet 'smartGym-backEnd-web': initialization completed in 3884 ms
+2019-12-10 14:58:52  [ http-bio-8080-exec-2:175224 ] - [ INFO ]  {dataSource-1} inited
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175830 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175831 ] - [ INFO ]  请求者微信号:admin
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175832 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175832 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175832 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175832 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175891 ] - [ INFO ]  请求参数:{"gameID":["201900001"],"category_name":["ceshiceshiceshi"],"userWxId":["admin"]}
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175893 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:175893 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@1ec34bc4, null]
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176045 ] - [ INFO ]  请求类方法参数名称和值：{"category_name":"ceshiceshiceshi"}
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176045 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176080 ] - [ ERROR ]  ====================异常内容开始====================
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176083 ] - [ ERROR ]  方法开始执行时间:1575961132690
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176084 ] - [ ERROR ]  请求者微信号:admin
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176084 ] - [ ERROR ]  请求者姓名:null
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176085 ] - [ ERROR ]  请求者学号:null
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176086 ] - [ ERROR ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176086 ] - [ ERROR ]  请求方式:POST
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176087 ] - [ ERROR ]  请求参数:{"gameID":["201900001"],"category_name":["ceshiceshiceshi"],"userWxId":["admin"]}
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176087 ] - [ ERROR ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176088 ] - [ ERROR ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@1ec34bc4, null]
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176088 ] - [ ERROR ]  请求类方法参数名称和值：{"category_name":"ceshiceshiceshi"}
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176088 ] - [ ERROR ]  方法发生异常时间:1575961133764
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176088 ] - [ ERROR ]  方法发生的异常：java.lang.RuntimeException: Value for wxId cannot be null
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176089 ] - [ ERROR ]  	at cn.smartGym.pojo.AppUserExample$GeneratedCriteria.addCriterion(AppUserExample.java:96)
+	at cn.smartGym.pojo.AppUserExample$GeneratedCriteria.andWxIdEqualTo(AppUserExample.java:249)
+	at cn.smartGym.pojo.AppUserExample$Criteria.andWxIdEqualTo(AppUserExample.java:1119)
+	at cn.smartGym.service.impl.AppUserServiceImpl.getAuthority(AppUserServiceImpl.java:265)
+	at cn.smartGym.service.impl.AppUserServiceImpl$$FastClassBySpringCGLIB$$db068325.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at cn.smartGym.service.impl.AppUserServiceImpl$$EnhancerBySpringCGLIB$$663de72a.getAuthority(<generated>)
+	at cn.smartGym.controller.CategoryController.addCompetition(CategoryController.java:47)
+	at cn.smartGym.controller.CategoryController$$FastClassBySpringCGLIB$$5bdc0813.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at cn.smartGym.aop.ArchivesLogAspect.around(ArchivesLogAspect.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:43)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at cn.smartGym.controller.CategoryController$$EnhancerBySpringCGLIB$$3204ed69.addCompetition(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-10 14:58:53  [ http-bio-8080-exec-2:176091 ] - [ ERROR ]  ====================异常内容结束====================
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195659 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195660 ] - [ INFO ]  请求者微信号:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195660 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195661 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195661 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195661 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195661 ] - [ INFO ]  请求参数:{"gameID":["201900001"],"category_name":["ceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195662 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195662 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@4eba8c13, admin]
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195665 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshi"},"categoryCtr":"admin"}
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195666 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195702 ] - [ ERROR ]  ====================异常内容开始====================
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195702 ] - [ ERROR ]  方法开始执行时间:1575961153343
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195703 ] - [ ERROR ]  请求者微信号:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195704 ] - [ ERROR ]  请求者姓名:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195704 ] - [ ERROR ]  请求者学号:null
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195704 ] - [ ERROR ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195704 ] - [ ERROR ]  请求方式:POST
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195705 ] - [ ERROR ]  请求参数:{"gameID":["201900001"],"category_name":["ceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195706 ] - [ ERROR ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195706 ] - [ ERROR ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@4eba8c13, admin]
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195706 ] - [ ERROR ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshi"},"categoryCtr":"admin"}
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195706 ] - [ ERROR ]  方法发生异常时间:1575961153386
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195707 ] - [ ERROR ]  方法发生的异常：java.lang.NullPointerException
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195707 ] - [ ERROR ]  	at cn.smartGym.controller.CategoryController.addCompetition(CategoryController.java:50)
+	at cn.smartGym.controller.CategoryController$$FastClassBySpringCGLIB$$5bdc0813.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at cn.smartGym.aop.ArchivesLogAspect.around(ArchivesLogAspect.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:43)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at cn.smartGym.controller.CategoryController$$EnhancerBySpringCGLIB$$3204ed69.addCompetition(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-10 14:59:13  [ http-bio-8080-exec-3:195708 ] - [ ERROR ]  ====================异常内容结束====================
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204676 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204676 ] - [ INFO ]  请求者微信号:null
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204676 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204677 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204677 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204677 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204677 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204678 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204678 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@1d298450, admin]
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204679 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204679 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204714 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204720 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息错误！"}}
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204720 ] - [ INFO ]  方法执行所用时间:44ms
+2019-12-10 14:59:22  [ http-bio-8080-exec-4:204721 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213374 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213374 ] - [ INFO ]  请求者微信号:null
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213374 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213375 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213375 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213375 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213375 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213375 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213376 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@7901cd0a, admin]
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213376 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213376 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213412 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213413 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息错误！"}}
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213413 ] - [ INFO ]  方法执行所用时间:39ms
+2019-12-10 14:59:31  [ http-bio-8080-exec-5:213413 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219505 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219506 ] - [ INFO ]  请求者微信号:null
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219506 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219506 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219507 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219507 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219507 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219508 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219508 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@7486417c, admin]
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219508 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219509 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219552 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219553 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息错误！"}}
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219553 ] - [ INFO ]  方法执行所用时间:48ms
+2019-12-10 14:59:37  [ http-bio-8080-exec-6:219553 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236876 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236876 ] - [ INFO ]  请求者微信号:null
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236876 ] - [ INFO ]  请求者姓名:null
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236877 ] - [ INFO ]  请求者学号:null
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236877 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236877 ] - [ INFO ]  请求方式:POST
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236878 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236878 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236879 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@4739797d, admin]
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236879 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:236879 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:237069 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:237070 ] - [ INFO ]  方法执行结果:{"result":{"status":200,"msg":"添加成功！"}}
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:237070 ] - [ INFO ]  方法执行所用时间:194ms
+2019-12-10 14:59:54  [ http-bio-8080-exec-7:237070 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245564 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245564 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245565 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245565 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245565 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245565 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245566 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245566 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245567 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@5e6bd7e9, admin]
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245567 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245568 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245624 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245625 ] - [ INFO ]  方法执行结果:{"result":{"status":409,"msg":"添加失败，比赛已存在！"}}
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245625 ] - [ INFO ]  方法执行所用时间:61ms
+2019-12-10 15:00:03  [ http-bio-8080-exec-8:245625 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262590 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262590 ] - [ INFO ]  请求者微信号:test
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262591 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262591 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262591 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/addApplication.action
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262591 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262592 ] - [ INFO ]  请求参数:{"userWxId":["test"],"studentNo":["0001"],"itemID":["test"],"name":["test"],"college":["土木工程学院"],"gender":["男"],"job":["队员"]}
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262592 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.addApplication(GameApplicationCtr)
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262592 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@60235f70]
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262605 ] - [ INFO ]  请求类方法参数名称和值：{"college":"土木工程学院","gender":"男","id":0,"job":"队员","name":"test"}
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262605 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262616 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262617 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足"}}
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262617 ] - [ INFO ]  方法执行所用时间:27ms
+2019-12-10 15:00:20  [ http-bio-8080-exec-9:262617 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266312 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266314 ] - [ INFO ]  请求者微信号:test
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266314 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266315 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266315 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/addApplication.action
+2019-12-10 15:00:23  [ http-bio-8080-exec-10:266315 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266316 ] - [ INFO ]  请求参数:{"userWxId":["test"],"studentNo":["0001"],"itemID":["test"],"name":["test"],"college":["土木工程学院"],"gender":["男"],"job":["队员"]}
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266317 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.addApplication(GameApplicationCtr)
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266317 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@1d081939]
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266317 ] - [ INFO ]  请求类方法参数名称和值：{"college":"土木工程学院","gender":"男","id":0,"job":"队员","name":"test"}
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266318 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266318 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266319 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足"}}
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266319 ] - [ INFO ]  方法执行所用时间:7ms
+2019-12-10 15:00:24  [ http-bio-8080-exec-10:266319 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275067 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275067 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275067 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275068 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275068 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/addApplication.action
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275068 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275069 ] - [ INFO ]  请求参数:{"user_wxid":["test"],"studentNo":["0001"],"itemID":["test"],"name":["test"],"college":["土木工程学院"],"gender":["男"],"job":["队员"]}
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275069 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.addApplication(GameApplicationCtr)
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275069 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@17f07249]
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275070 ] - [ INFO ]  请求类方法参数名称和值：{"college":"土木工程学院","gender":"男","id":0,"job":"队员","name":"test","user_wxid":"test"}
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275070 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275070 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275071 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足"}}
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275072 ] - [ INFO ]  方法执行所用时间:5ms
+2019-12-10 15:00:32  [ http-bio-8080-exec-10:275072 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283498 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283498 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283498 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283499 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283499 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/addApplication.action
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283499 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283499 ] - [ INFO ]  请求参数:{"user_wxid":["test"],"student_no":["0001"],"item_id":["test"],"name":["test"],"college":["土木工程学院"],"gender":["男"],"job":["队员"]}
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283500 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.addApplication(GameApplicationCtr)
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283500 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@f6ee465]
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283500 ] - [ INFO ]  请求类方法参数名称和值：{"college":"土木工程学院","gender":"男","id":0,"item_id":"test","job":"队员","name":"test","student_no":"0001","user_wxid":"test"}
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283500 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283587 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283588 ] - [ INFO ]  方法执行结果:{"result":{"status":409,"msg":"已报名该项目！"}}
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283588 ] - [ INFO ]  方法执行所用时间:90ms
+2019-12-10 15:00:41  [ http-bio-8080-exec-10:283588 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285732 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285732 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285733 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285733 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285733 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/addApplication.action
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285733 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285734 ] - [ INFO ]  请求参数:{"user_wxid":["test"],"student_no":["0001"],"item_id":["test"],"name":["test"],"college":["土木工程学院"],"gender":["男"],"job":["队员"]}
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285734 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.addApplication(GameApplicationCtr)
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285734 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@73441f8a]
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285734 ] - [ INFO ]  请求类方法参数名称和值：{"college":"土木工程学院","gender":"男","id":0,"item_id":"test","job":"队员","name":"test","student_no":"0001","user_wxid":"test"}
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285735 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285760 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285761 ] - [ INFO ]  方法执行结果:{"result":{"status":409,"msg":"已报名该项目！"}}
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285761 ] - [ INFO ]  方法执行所用时间:29ms
+2019-12-10 15:00:43  [ http-bio-8080-exec-10:285761 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301120 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301121 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301122 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301123 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301123 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/getApplicationByCategoryId.action
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301123 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301124 ] - [ INFO ]  请求参数:{"category_id":["test"]}
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301125 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.getApplicationByCategoryId(GameApplicationCtr)
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301125 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@76892881]
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301125 ] - [ INFO ]  请求类方法参数名称和值：{"category_id":"test","id":0}
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301125 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301146 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301150 ] - [ INFO ]  方法执行结果:{"result":{"status":200,"msg":"获取报名信息成功！","data":[{"id":0,"name":"梁星","player_WxId":"admin","college":"交通运输工程学院","job":"队员","gender":"男","student_no":"1850933","game_id":"test","category_id":"test","item_id":"test","checked":0},{"id":0,"name":"梁星","player_WxId":"admin","college":"交通运输工程学院","job":"队员","gender":"男","student_no":"1850933","game_id":"test","category_id":"test","item_id":"test","checked":0},{"id":0,"name":"test","player_WxId":"test","college":"土木工程学院","job":"队员","student_no":"0001","game_id":"test","category_id":"test","item_id":"test","checked":1}]}}
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301150 ] - [ INFO ]  方法执行所用时间:30ms
+2019-12-10 15:00:58  [ http-bio-8080-exec-10:301150 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331720 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331721 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331721 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331721 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331721 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/getApplicationByItemId.action
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331722 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331722 ] - [ INFO ]  请求参数:{"item_id":["test"]}
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331723 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.getApplicationByItemId(GameApplicationCtr)
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331723 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@698f484]
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331723 ] - [ INFO ]  请求类方法参数名称和值：{"id":0,"item_id":"test"}
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331724 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331743 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331744 ] - [ INFO ]  方法执行结果:{"result":{"status":200,"msg":"获取报名信息成功！","data":[{"id":0,"name":"梁星","player_WxId":"admin","college":"交通运输工程学院","job":"队员","gender":"男","student_no":"1850933","game_id":"test","category_id":"test","item_id":"test","checked":0},{"id":0,"name":"梁星","player_WxId":"admin","college":"交通运输工程学院","job":"队员","gender":"男","student_no":"1850933","game_id":"test","category_id":"test","item_id":"test","checked":0},{"id":0,"name":"test","player_WxId":"test","college":"土木工程学院","job":"队员","student_no":"0001","game_id":"test","category_id":"test","item_id":"test","checked":1}]}}
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331744 ] - [ INFO ]  方法执行所用时间:24ms
+2019-12-10 15:01:29  [ http-bio-8080-exec-10:331744 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:02:13  [ http-bio-8080-exec-7:375730 ] - [ WARN ]  No mapping found for HTTP request with URI [/smartgym/news/verifyCompetition.action] in DispatcherServlet with name 'smartGym-backEnd-web'
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419806 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419806 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419806 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419806 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419806 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/competition/verifyCompetition.action
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419807 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419807 ] - [ INFO ]  请求参数:{"category_id":["test"]}
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419807 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CompetitionController.verifyCompetition(String,String)
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419807 ] - [ INFO ]  请求类方法参数:[null, null]
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419808 ] - [ INFO ]  请求类方法参数名称和值：
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419808 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419819 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419820 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足！"}}
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419820 ] - [ INFO ]  方法执行所用时间:14ms
+2019-12-10 15:02:57  [ http-bio-8080-exec-7:419820 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465403 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465403 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465404 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465404 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465404 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/verifyApplication.action
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465404 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465405 ] - [ INFO ]  请求参数:{"competition_id":["test"]}
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465409 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.verifyApplication(GameApplicationCtr)
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465409 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@29b7ab8]
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465409 ] - [ INFO ]  请求类方法参数名称和值：{"id":0}
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465410 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465410 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465410 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足"}}
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465410 ] - [ INFO ]  方法执行所用时间:7ms
+2019-12-10 15:03:43  [ http-bio-8080-exec-7:465411 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483355 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483356 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483356 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483356 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483356 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/gameApplication/verifyApplication.action
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483356 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483357 ] - [ INFO ]  请求参数:{"category_id":["test"]}
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483357 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.GameApplicationController.verifyApplication(GameApplicationCtr)
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483357 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.GameApplicationCtr@1ae0f286]
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483357 ] - [ INFO ]  请求类方法参数名称和值：{"category_id":"test","id":0}
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483358 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483358 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483358 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"输入信息不足"}}
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483358 ] - [ INFO ]  方法执行所用时间:3ms
+2019-12-10 15:04:01  [ http-bio-8080-exec-7:483358 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500176 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500176 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500177 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500177 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500177 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/category/addCategory.action
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500178 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500178 ] - [ INFO ]  请求参数:{"game_id":["201900001"],"category_name":["ceshiceshiceshiceshi"],"user_wxid":["admin"]}
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500178 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CategoryController.addCompetition(CategoryCtr,String)
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500178 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CategoryCtr@6be459a1, admin]
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500179 ] - [ INFO ]  请求类方法参数名称和值：{"this":{"category_name":"ceshiceshiceshiceshi","game_id":"201900001"},"categoryCtr":"admin"}
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500179 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500244 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500244 ] - [ INFO ]  方法执行结果:{"result":{"status":409,"msg":"添加失败，比赛已存在！"}}
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500244 ] - [ INFO ]  方法执行所用时间:68ms
+2019-12-10 15:04:17  [ http-bio-8080-exec-7:500244 ] - [ INFO ]  ====================返回内容结束====================
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505540 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505541 ] - [ INFO ]  请求者微信号:1
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505541 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505541 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505541 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/competition/addCompetition.action
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505542 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505542 ] - [ INFO ]  请求参数:{"game_name":["ceshiceshi"],"principal_WxId":["admin"],"userWxId":["1"]}
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505543 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CompetitionController.addCompetition(CompetitionCtr,String)
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505543 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CompetitionCtr@77ce9327, null]
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505555 ] - [ INFO ]  请求类方法参数名称和值：{"game_name":"ceshiceshi"}
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505556 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505556 ] - [ ERROR ]  ====================异常内容开始====================
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  方法开始执行时间:1575961463224
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  请求者微信号:1
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  请求者姓名:null
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  请求者学号:null
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  请求地址:http://localhost:8080/smartgym/competition/addCompetition.action
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505557 ] - [ ERROR ]  请求方式:POST
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505558 ] - [ ERROR ]  请求参数:{"game_name":["ceshiceshi"],"principal_WxId":["admin"],"userWxId":["1"]}
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505558 ] - [ ERROR ]  请求类方法:SGResult cn.smartGym.controller.CompetitionController.addCompetition(CompetitionCtr,String)
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505558 ] - [ ERROR ]  请求类方法参数:[cn.smartGym.pojoCtr.CompetitionCtr@77ce9327, null]
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505558 ] - [ ERROR ]  请求类方法参数名称和值：{"game_name":"ceshiceshi"}
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505559 ] - [ ERROR ]  方法发生异常时间:1575961463240
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505559 ] - [ ERROR ]  方法发生的异常：java.lang.RuntimeException: Value for wxId cannot be null
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505560 ] - [ ERROR ]  	at cn.smartGym.pojo.AppUserExample$GeneratedCriteria.addCriterion(AppUserExample.java:96)
+	at cn.smartGym.pojo.AppUserExample$GeneratedCriteria.andWxIdEqualTo(AppUserExample.java:249)
+	at cn.smartGym.pojo.AppUserExample$Criteria.andWxIdEqualTo(AppUserExample.java:1119)
+	at cn.smartGym.service.impl.AppUserServiceImpl.getAuthority(AppUserServiceImpl.java:265)
+	at cn.smartGym.service.impl.AppUserServiceImpl$$FastClassBySpringCGLIB$$db068325.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at cn.smartGym.service.impl.AppUserServiceImpl$$EnhancerBySpringCGLIB$$663de72a.getAuthority(<generated>)
+	at cn.smartGym.controller.CompetitionController.addCompetition(CompetitionController.java:45)
+	at cn.smartGym.controller.CompetitionController$$FastClassBySpringCGLIB$$aeefe342.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at cn.smartGym.aop.ArchivesLogAspect.around(ArchivesLogAspect.java:137)
+	at sun.reflect.GeneratedMethodAccessor104.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:43)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)
+	at cn.smartGym.controller.CompetitionController$$EnhancerBySpringCGLIB$$faab29b8.addCompetition(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-12-10 15:04:23  [ http-bio-8080-exec-7:505561 ] - [ ERROR ]  ====================异常内容结束====================
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523795 ] - [ INFO ]  ====================请求内容开始====================
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523796 ] - [ INFO ]  请求者微信号:null
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523796 ] - [ INFO ]  请求者姓名:null
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523796 ] - [ INFO ]  请求者学号:null
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523797 ] - [ INFO ]  请求地址:http://localhost:8080/smartgym/competition/addCompetition.action
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523797 ] - [ INFO ]  请求方式:POST
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523797 ] - [ INFO ]  请求参数:{"game_name":["ceshiceshi"],"principal_WxId":["admin"],"user_wxid":["1"]}
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523798 ] - [ INFO ]  请求类方法:SGResult cn.smartGym.controller.CompetitionController.addCompetition(CompetitionCtr,String)
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523798 ] - [ INFO ]  请求类方法参数:[cn.smartGym.pojoCtr.CompetitionCtr@18ea2b0c, 1]
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523798 ] - [ INFO ]  请求类方法参数名称和值：{"competitionCtr":{"game_name":"ceshiceshi"},"user_wxid":"1"}
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523799 ] - [ INFO ]  ====================请求内容结束====================
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523806 ] - [ INFO ]  ====================返回内容开始====================
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523807 ] - [ INFO ]  方法执行结果:{"result":{"status":400,"msg":"权限不足！"}}
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523807 ] - [ INFO ]  方法执行所用时间:12ms
+2019-12-10 15:04:41  [ http-bio-8080-exec-5:523808 ] - [ INFO ]  ====================返回内容结束====================

@@ -1,0 +1,2 @@
+2020-01-01 22:37:54  [ localhost-startStop-2:214356373 ] - [ INFO ]  Closing WebApplicationContext for namespace 'smartGym-backEnd-web-servlet': startup date [Mon Dec 30 11:05:18 CST 2019]; root of context hierarchy
+2020-01-01 22:37:54  [ localhost-startStop-2:214356434 ] - [ INFO ]  {dataSource-1} closed
