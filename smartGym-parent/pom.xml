@@ -47,7 +47,7 @@
 		<json-lib.version>2.2.3</json-lib.version>
 		<json-simple.version>1.1</json-simple.version>
 		<javassist.version>3.3</javassist.version>
-		<fastjson.version>1.2.31</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<gson.version>2.7</gson.version>
 		<poi.version>3.6</poi.version>
 	</properties>
